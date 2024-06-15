@@ -1,0 +1,67 @@
+*{
+    font-family: 'Poppins', Courier, monospace;
+    background-color: black;
+}
+
+header{
+    width: 60%;
+    margin: 1em auto;
+    align-items: center;
+    text-align: center;
+}
+h1{
+    font: bolder;
+    font-size: xx-large;
+    text-align: centre;
+    text-shadow: 3px 3px gray;
+    color: white;
+}
+
+#intro{
+    font-weight: bold;
+    font-size: x-large;
+    color: white;
+}
+
+#players{
+    width: 60%;
+    margin: 0.5em auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+}
+.player{
+    color: white;
+}
+#grid{
+    width:40%;
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 200px 200px 200px;
+    padding: 15px;
+}
+
+.griditems{
+    border: 4px solid white;
+}
+
+#controls{
+    width: 30%;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 4px;
+}
+
+button{
+    font-weight: bold;
+    font-size: large;
+    border-radius: 5px;
+    border: 1px dashed white;
+    color: white;
+    size: 20%;
+}
+
