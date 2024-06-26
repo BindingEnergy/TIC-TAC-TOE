@@ -40,7 +40,7 @@ h1{
     width: 40%;
     margin: 1em auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Make grid columns responsive */
+    grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: repeat(3, 200px);
     padding: 15px;
 }
@@ -49,8 +49,9 @@ h1{
     border: 4px solid white;
     color: white;
     text-align: center;
-    font-weight: bold;
-    font-size: xx-large;
+    align-content: center;
+    font-weight: bolder;
+    font-size: 6em;
 }
 
 #controls {
@@ -77,7 +78,7 @@ button {
     }
 
     .griditems {
-        font-size: large; /* Adjust font size */
+        font-size: 5em; /* Adjust font size */
     }
 
     #controls {
@@ -93,7 +94,7 @@ button {
     }
 
     .griditems {
-        font-size: medium; /* Further adjust font size for readability */
+        font-size: 4em; /* Further adjust font size for readability */
     }
 
     #controls {

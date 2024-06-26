@@ -94,6 +94,7 @@ controlButtons[0].addEventListener("click",(event)=>{
 controlButtons[1].addEventListener("click",(event)=>{
     console.log("resettting....");
     ++countReset;
+    countStart = 0;
     if(countReset > 1){
         alert("Game is already reset !!");
     }else{
