@@ -23,7 +23,7 @@ h1{
     color: white;
 }
 
-#players{
+#players {
     width: 60%;
     margin: 0.5em auto;
     display: flex;
@@ -31,24 +31,30 @@ h1{
     justify-content: space-around;
     color: white;
 }
+
 .player{
     color: white;
 }
-#grid{
-    width:40%;
+
+#grid {
+    width: 40%;
     margin: 1em auto;
     display: grid;
-    grid-template-columns: 250px 250px 250px;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: repeat(3, 1fr); /* Make grid columns responsive */
+    grid-template-rows: repeat(3, 200px);
     padding: 15px;
 }
 
-.griditems{
+.griditems {
     border: 4px solid white;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
 }
 
-#controls{
-    width: 30%;
+#controls {
+    width: 60%; /* Adjusted for better responsiveness */
     margin: 1em auto;
     display: flex;
     flex-direction: row;
@@ -56,12 +62,54 @@ h1{
     padding: 4px;
 }
 
-button{
+button {
     font-weight: bold;
     font-size: large;
     border-radius: 5px;
     border: 1px dashed white;
     color: white;
-    size: 20%;
+}
+
+@media (max-width: 768px) {
+    #grid {
+        width: 60%; /* Increase width for smaller devices */
+        grid-template-rows: repeat(3, 150px); /* Adjust row size */
+    }
+
+    .griditems {
+        font-size: large; /* Adjust font size */
+    }
+
+    #controls {
+        width: 80%; /* Increase control width */
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    #grid {
+        width: 90%; /* Increase width for very small devices */
+        grid-template-rows: repeat(3, 100px); /* Further adjust row size */
+    }
+
+    .griditems {
+        font-size: medium; /* Further adjust font size for readability */
+    }
+
+    #controls {
+        flex-direction: column; /* Stack controls vertically */
+        width: 90%; /* Increase control width */
+    }
+
+    button {
+        margin-bottom: 10px; /* Add space between stacked buttons */
+    }
+
+    #players {
+        flex-direction: column; /* Stack players information vertically */
+        width: 90%; /* Adjust width for better fit on small screens */
+        margin: 0 auto; /* Center align the players section */
+        padding: 10px 0; /* Add some padding for spacing */
+    }
 }
 
